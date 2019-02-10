@@ -1,40 +1,101 @@
 body{
   font-family: "Lato";
-  text-align: center;
 }
 
-#top_section{
-  background-color: #86A8ED;
-  font-family: "Libre Baskerville";
-  padding-top: 3px;
-  padding-bottom: 5px;
-}
+  .top-section{
+    background-color: #87bdd8;
+    font-family: "Libre Baskerville";
+    padding: 15px;
+    text-align: center;
+  }
 
-#top_section h1{
-  font-size: 3em;
-}
+  #safety{
+    background-image: url(images/female_doc.jpg);
+    background-repeat: no-repeat;
+    color: black;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
 
-#top_section h2{
-  font-size: 2.5em;
-}
+  #hcahps{
+    background-image: url(images/Male_doc.jpeg);
+    background-repeat: no-repeat;
+    color: black;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
 
-#safety{
-  background-image: url(images/Male_doc.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 5px;
-}
+  #eff{
+    background-image: url(images/Hospital_front.jpeg);
+    background-repeat: no-repeat;
+    color: black;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
 
-.saftey_PSI-90{
-  display: inline-block;
-  position: relative;
-}
+  .vbph{
+    font-family: "Libre Baskerville";
+    text-align: center;
+  }
 
-.tab-div{
-  width: 800px;
-}
+  .fy{
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-align: center;
+  }
 
-.tab-div-50{
-  width: 50%;
-}
+  .vbp{
+    background-color: #Cfe0e8;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .tb{
+    border: solid thin;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    padding: 5px;
+    position: relative;
+  }
+
+  .table-tab{
+    display: inline-block;
+  }
+
+  table tr td{
+    width: 300px;
+  }
+
+  .rt{
+    background-color: #87bdd8;
+    font-family: "Libre Baskerville";
+    font-size: 1.3em;
+    padding: 1px;
+    text-align: center;
+  }
+
+  .spacer{
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+
+  .sp{
+    margin-top: 150px;
+  }
+
+  .sp2{
+      margin-top: 150px;
+  }
+
+  .bottom-section{
+    background-color: #87bdd8;
+    padding: 10px;
+  }
+
+  .bottom-section h6{
+    font-size: .7em;
+    font-family: "Lato";
+  }
