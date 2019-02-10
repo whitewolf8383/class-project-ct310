@@ -1,819 +1,882 @@
-<!-- html boiler plate template -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <!-- Link section -->
-    <link rel="stylesheet" href="index_style.css">
-    <!-- script styles  from Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- Link section -->
+  <link rel="stylesheet" href="index_style.css">
+  <!-- script styles  from Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-  </head>
-  <body>
-    <!-- header section -->
-    <section id="top_section">
-      <h1>The University of Chicago</h1>
-      <h2>Medical Center</h2>
+  <!-- Bootstrape -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- color standard Palette
+    #Cfe0e8
+    #b7d7e8
+    #87bdd8
+    #daebe8
+  -->
+</head>
+
+<body>
+  <!-- header section -->
+  <section class="top-section">
+    <h1>The University of Chicago</h1>
+    <h2>Medical Center</h2>
+  </section>
+
+  <!-- body section -->
+  <section class="mid-section">
+    <section class="vbp">
+      <h2 class="vbph">VBP Program Reimbursment</h2>
+      <div class="tb expected">
+        <h3 class="vbph">Medicare Expected</h3>
+        <h3>Amount Here</h3>
+      </div>
+      <div class="tb vbp-calc">
+        <h3 class="vbph">Calculated VBP Penalty</h3>
+        <h3>Amount Here</h3>
+      </div>
+      <div class="tb adjusted">
+        <h3 class="vbph">Adjusted Medicare</h3>
+        <h3>Amount Here</h3>
+      </div>
+      <h2 class="fy">FY 2016</h2>
     </section>
 
-    <!-- body section -->
-    <section id="mid-section">
-      <section id="safety">
-        <h2>Reports</h2>
-        <h3>Safety</h3>
 
-        <!-- PSI-90 div -->
-        <div class="saftey_PSI-90">
-          <h4>PSI-90</h4>
-          <div class="tab-div">
-            <div>
-              <div class="tab-div-50">Achievement Threshold</div>
-              <div class="tab-div-50">Benchmark</div>
+    <section id="safety">
+      <h3 class="vbph">Safety</h3>
+
+      <div class="container spacer">
+        <div class="row justify-content-around">
+          <!-- PSI-90 div -->
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">PSI-90</h4>
+            <div class="table table-striped table table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.964542</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0.709498</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>1.469997</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0.680332</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>10 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>9 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>10 out of 10</td>
+                </tr>
+              </table>
             </div>
-            <div>
-              <div class="tab-div-50">0.964542</div>
-              <div class="tab-div-50">0.709498</div>
-            </div>
-            <div>
-              <div class="tab-div-50">Baseline Rate</div>
-              <div class="tab-div-50">Performance Rate</div>
-            </div>
-            <div>
-              <div class="tab-div-50">1.469997</div>
-              <div class="tab-div-50">0.680332</div>
-            </div>
-            <div>
-              <div class="tab-div-50">Achievement Points</div>
-              <div class="tab-div-50">Improvement Points</div>
-            </div>
-            <div>
-              <div class="tab-div-50">10 out of 10</div>
-              <div class="tab-div-50">9 out of 9</div>
-            </div>
-            <div>
-              <div>Measure Score</div>
-            </div>
-            <div>
-              <div>10 out of 10</div>
+          </div>
+
+          <!-- HAI-1 Div -->
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">HAI-1</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.369</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>0.243</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0.388</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>0 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>0 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>0 out of 10</td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- HAI-1 Div -->
-        <div class="saftey_HAI-1">
-          <h4>HAI-1</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.369</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>0.243</td>
-              <td>0.388</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-              <td>0 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-            </tr>
-          </table>
+      <div class="container spacer">
+        <div class="row justify-content-around">
+          <!-- HAI-2 Div -->
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">HAI-2</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.906</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>0.797</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0.644</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>3 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>1 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>3 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- HAI-3 Div -->
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">HAI-3</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.824</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>0.373</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0.433</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>5 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>0 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>5 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- HAI-2 Div -->
-        <div class="saftey_HAI-2">
-          <h4>HAI-2</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.906</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>0.797</td>
-              <td>0.644</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>3 out of 10</td>
-              <td>1 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>3 out of 10</td>
-            </tr>
-          </table>
+      <div class="container spacer sp">
+        <div class="row justify-content-around">
+          <!-- HAI-4 Div -->
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">HAI-4</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.71</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>0.469</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0.85</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>0 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>0 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>0 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- HAI-5 Div -->
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">HAI-5</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.767</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>0.546</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0.404</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>5 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>2 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>5 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- HAI-3 Div -->
-        <div class="saftey_HAI-3">
-          <h4>HAI-3</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.824</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>0.373</td>
-              <td>0.433</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>5 out of 10</td>
-              <td>0 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>5 out of 10</td>
-            </tr>
-          </table>
+      <div class="container spacer">
+        <div class="row justify-content-around">
+          <!-- HAI-6 Div -->
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">HAI-6</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.805</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0.004</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>1.999</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>1.066</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>0 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>4 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>4 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- PC-01 Div -->
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">PC-01</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.020408</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>0.032258</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>10 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>9 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>10 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
-
-        <!-- HAI-4 Div -->
-        <div class="saftey_HAI-4">
-          <h4>HAI-4</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.71</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>0.469</td>
-              <td>0.85</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-              <td>0 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <!-- HAI-5 Div -->
-        <div class="saftey_HAI-5">
-          <h4>HAI-5</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.767</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>0.546</td>
-              <td>0.404</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>5 out of 10</td>
-              <td>2 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>5 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <!-- HAI-6 Div -->
-        <div class="saftey_HAI-6">
-          <h4>HAI-6</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.805</td>
-              <td>0.004</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>1.999</td>
-              <td>1.066</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-              <td>4 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>4 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <!-- PC-01 Div -->
-        <div class="saftey_PC-01">
-          <h4>PC-01</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.020408</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>0.032258</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>10 out of 10</td>
-              <td>9 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>10 out of 10</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-
-      <section id="hcahps">
-        <h3>HCAHPS</h3>
-
-        <div class="hcahps_comm_nurse">
-          <h4>Communication with Nurses</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>78.52</td>
-              <td>86.68</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>76.15</td>
-              <td>79.74</td>
-            </tr>
-            <tr>
-              <td>Communication on Floor</td>
-            </tr>
-            <tr>
-              <td>55.27</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>2 out of 10</td>
-              <td>3 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>3 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="hcahps_comm_docs">
-          <h4>Communication with Doctors</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>80.44</td>
-              <td>88.51</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>80.61</td>
-              <td>82.29</td>
-            </tr>
-            <tr>
-              <td>Communication on Floor</td>
-            </tr>
-            <tr>
-              <td>57.39</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>3 out of 10</td>
-              <td>2 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>3 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="hcahps_resp_staff">
-          <h4>Responsivness of Hospital Staff</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>65.08</td>
-              <td>80.35</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>61.51</td>
-              <td>63.42</td>
-            </tr>
-            <tr>
-              <td>Responsivness on Floor</td>
-            </tr>
-            <tr>
-              <td>38.4</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-              <td>1 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>1 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="hcahps_care_trans">
-          <h4>Care Transition</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>51.45</td>
-              <td>62.44</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>52.12</td>
-              <td>54.46</td>
-            </tr>
-            <tr>
-              <td>Care Transition on Floor</td>
-            </tr>
-            <tr>
-              <td>25.21</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>3 out of 10</td>
-              <td>2 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>3 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="hcahps_comm_meds">
-          <h4>Communication about Medicines</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>63.37</td>
-              <td>73.66</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>62.71</td>
-              <td>63.05</td>
-            </tr>
-            <tr>
-              <td>Communication about Medicines on Floor</td>
-            </tr>
-            <tr>
-              <td>43.43</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-              <td>0 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="hcahps_clean">
-          <h4>Cleanliness and Quietness</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>65.6</td>
-              <td>79</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>66.04</td>
-              <td>66.68</td>
-            </tr>
-            <tr>
-              <td>Cleanliness and Quietness on Floor</td>
-            </tr>
-            <tr>
-              <td>40.05</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>1 out of 10</td>
-              <td>0 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>1 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="hcahps_discharge">
-          <h4>Discharge Information</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>86.6</td>
-              <td>91.63</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>84.52</td>
-              <td>86.19</td>
-            </tr>
-            <tr>
-              <td>Discharge Information on Floor</td>
-            </tr>
-            <tr>
-              <td>62.25</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-              <td>2 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>2 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="hcahps_overall_rating">
-          <h4>Hospital Overall Rating</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>70.23</td>
-              <td>84.58</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>73.81</td>
-              <td>76.59</td>
-            </tr>
-            <tr>
-              <td>Overall Rating on Floor</td>
-            </tr>
-            <tr>
-              <td>37.67</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>4 out of 10</td>
-              <td>2 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>4 out of 10</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-
-      <section id="Eff">
-        <div class="eff_mspb">
-          <h4>MSPB-1</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.985777</td>
-              <td>0.832678</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>1.047495</td>
-              <td>1.047604</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-              <td>0 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>0 out of 10</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-
-      <section id="Clinical">
-        <div class="clinical_mort30_ami">
-          <h4>MORT-30 AMI</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.850916</td>
-              <td>0.873053</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>0.856288</td>
-              <td>0.859094</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>4 out of 10</td>
-              <td>1 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>4 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="clinical_mort30_ami">
-          <h4>MORT-30 HF</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.883421</td>
-              <td>0.907656</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>0.890634</td>
-              <td>0.894516</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>5 out of 10</td>
-              <td>2 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>5 out of 10</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="clinical_mort30_ami">
-          <h4>MORT-30 PN</h4>
-          <table>
-            <tr>
-              <td>Achievement Threshold</td>
-              <td>Benchmark</td>
-            </tr>
-            <tr>
-              <td>0.88286</td>
-              <td>0.90790</td>
-            </tr>
-            <tr>
-              <td>Baseline Rate</td>
-              <td>Performance Rate</td>
-            </tr>
-            <tr>
-              <td>0.884634</td>
-              <td>0.894234</td>
-            </tr>
-            <tr>
-              <td>Achievement Points</td>
-              <td>Improvement Points</td>
-            </tr>
-            <tr>
-              <td>5 out of 10</td>
-              <td>4 out of 9</td>
-            </tr>
-            <tr>
-              <td>Measure Score</td>
-            </tr>
-            <tr>
-              <td>5 out of 10</td>
-            </tr>
-          </table>
-        </div>
-      </section>
+      </div>
     </section>
-    <!-- footer section -->
-    <section id="bottom_section">
 
+
+
+    <section id="hcahps">
+      <h3 class="vbph">HCAHPS</h3>
+
+      <div class="container spacer">
+        <div class="row justify-content-around">
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">Communication with Nurses</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>78.52</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>86.68</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>76.15</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>79.74</td>
+                </tr>
+                <tr>
+                  <td>Communication on Floor</td>
+                  <td>55.27</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>2 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>3 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>3 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">Communication with Doctors</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>80.44</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>88.51</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>80.61</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>82.29</td>
+                </tr>
+                <tr>
+                  <td>Communication on Floor</td>
+                  <td>57.39</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>3 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>2 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>3 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container spacer sp2">
+        <div class="row justify-content-around">
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">Responsivness of Hospital Staff</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>65.08</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>80.35</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>61.51</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>63.42</td>
+                </tr>
+                <tr>
+                  <td>Responsivness on Floor</td>
+                  <td>38.4</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>0 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>1 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>1 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">Care Transition</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>51.45</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>62.44</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>52.12</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>54.46</td>
+                </tr>
+                <tr>
+                  <td>Care Transition on Floor</td>
+                  <td>25.21</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>3 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>2 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>3 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container spacer">
+        <div class="row justify-content-around">
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">Communication about Medicines</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>63.37</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>73.66</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>62.71</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>63.05</td>
+                </tr>
+                <tr>
+                  <td>Communication on Floor</td>
+                  <td>43.43</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>0 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>0 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>0 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">Cleanliness and Quietness</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>65.6</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>79</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>66.04</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>66.68</td>
+                </tr>
+                <tr>
+                  <td>Cleanliness and Quietness on Floor</td>
+                  <td>40.05</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>1 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>0 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>1 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container spacer">
+        <div class="row justify-content-around">
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">Discharge Information</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>86.6</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>91.63</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>84.52</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>86.19</td>
+                </tr>
+                <tr>
+                  <td>Discharge Information on Floor</td>
+                  <td>62.25</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>0 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>2 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>2 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">Hospital Overall Rating</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>70.23</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>84.58</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>73.81</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>76.59</td>
+                </tr>
+                <tr>
+                  <td>Overall Rating on Floor</td>
+                  <td>37.67</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>4 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>2 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>4 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  </body>
+
+
+
+
+
+
+    <section id="eff">
+      <h3 class="vbph">Efficency and Clinical</h3>
+
+      <div class="container spacer">
+        <div class="row justify-content-around">
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">MSPB-1</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.985777</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0.832678</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>1.047495</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>1.047604</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>0 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>0 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>0 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">MORT-30 AMI</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.850916</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0.873053</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>0.856288</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0.859094</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>4 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>1 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>4 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container spacer">
+        <div class="row justify-content-around">
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">MORT-30 HF</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.883421</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0.907656</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>0.890634</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0.894516</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>5 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>2 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>5 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-5 col-md-5">
+            <h4 class="rt">MORT-30 PN</h4>
+            <div class="table table-striped table-tab">
+              <table>
+                <tr>
+                  <td>Achievement Threshold</td>
+                  <td>0.88286</td>
+                </tr>
+                <tr>
+                  <td>Benchmark</td>
+                  <td>0.90790</td>
+                </tr>
+                <tr>
+                  <td>Baseline Rate</td>
+                  <td>0.884634</td>
+                </tr>
+                <tr>
+                  <td>Performance Rate</td>
+                  <td>0.894234</td>
+                </tr>
+                <tr>
+                  <td>Achievement Points</td>
+                  <td>5 out of 10</td>
+                </tr>
+                <tr>
+                  <td>Improvement Points</td>
+                  <td>4 out of 9</td>
+                </tr>
+                <tr>
+                  <td>Measure Score</td>
+                  <td>5 out of 10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <!-- footer section -->
+  <section class="bottom-section">
+    <h6>Built for CT310 class project: group 8</h6>
+  </section>
+</body>
 </html>
+
