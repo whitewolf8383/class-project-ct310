@@ -3,9 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <meta name="author" content="Keith J Francis, Matt Aertker, Benny Roesler, Richard Vilaret-Tuma">
+  <meta name="description" content="VBP data for University of Chicago Medical Center">
+  <meta name="keywords" content="HTML, CSS, JavaScript, VBP">
+  <title>VBP University of Chicago Medical</title>
   <!-- Link section -->
   <link rel="stylesheet" href="index_style.css">
+  <link rel="icon" href="images/AI.png">
+
   <!-- script styles  from Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
@@ -28,32 +33,45 @@
 <body>
   <!-- header section -->
   <section class="top-section">
-    <h1>The University of Chicago</h1>
-    <h2>Medical Center</h2>
+    <h1 class="ts-h">The University of Chicago</h1>
+    <h2 class="ts-h">Medical Center</h2>
   </section>
 
   <!-- body section -->
   <section class="mid-section">
+    <h6 class="ms6">.</h6>
     <section class="vbp">
       <h2 class="vbph">VBP Program Reimbursment</h2>
-      <div class="tb expected">
+      <div class="tb">
         <h3 class="vbph">Medicare Expected</h3>
-        <h3>Amount Here</h3>
+        <h4>$129,456,251.27</h4>
       </div>
-      <div class="tb vbp-calc">
+      <div class="tb">
         <h3 class="vbph">Calculated VBP Penalty</h3>
-        <h3>Amount Here</h3>
+        <h4>$2,589,125.03</h4>
       </div>
-      <div class="tb adjusted">
+      <div class="tb">
         <h3 class="vbph">Adjusted Medicare</h3>
-        <h3>Amount Here</h3>
+        <h4>127,982,003.48</h4>
       </div>
       <h2 class="fy">FY 2016</h2>
     </section>
 
+    <section id="tab">
+      <h2 class="tab-h2">Reports:</h2>
+      <div class="tab">
+        <button class="tablinks" onclick="print(event)"><strong>PRINT VIEW</strong></button>
+        <button class="tablinks" onclick="openSection(event, 'safety')"><strong>SAFETY</strong></button>
+        <button class="tablinks" onclick="openSection(event, 'hcahps')"><strong>HCAHPS</strong></button>
+        <button class="tablinks" onclick="openSection(event, 'eff')"><strong>EFFICIENCY and CLINICAL</strong></button>
+      </div>
 
-    <section id="safety">
-      <h3 class="vbph">Safety</h3>
+    </section>
+
+
+
+    <section id="safety" class="tabcontent">
+      <h3 class="vbph vh">Safety</h3>
 
       <div class="container spacer">
         <div class="row justify-content-around">
@@ -370,8 +388,8 @@
 
 
 
-    <section id="hcahps">
-      <h3 class="vbph">HCAHPS</h3>
+    <section id="hcahps" class="tabcontent">
+      <h3 class="vbph vh">HCAHPS</h3>
 
       <div class="container spacer">
         <div class="row justify-content-around">
@@ -715,8 +733,8 @@
 
 
 
-    <section id="eff">
-      <h3 class="vbph">Efficency and Clinical</h3>
+    <section id="eff" class="tabcontent">
+      <h3 class="vbph vh">Efficiency and Clinical</h3>
 
       <div class="container spacer">
         <div class="row justify-content-around">
@@ -872,11 +890,14 @@
     </section>
   </section>
 
-
   <!-- footer section -->
   <section class="bottom-section">
-    <h6>Built for CT310 class project: group 8</h6>
+    <h6>Built for CT310 class project: group 8 - Group 5 Medical Analytics</h6>
   </section>
-</body>
-</html>
 
+
+  <script src="index_script.js"></script>
+
+</body>
+
+</html>

@@ -1,57 +1,190 @@
-body{
+body {
   font-family: "Lato";
 }
 
-  .top-section{
+.top-section {
+  background-color: #87bdd8;
+  font-family: "Libre Baskerville";
+  padding: 15px;
+  text-align: center;
+}
+
+.ts-h {
+  font-size: 3.5em;
+}
+
+.mid-section {
+  background-color: #daebe8;
+  text-align: center;
+}
+
+.ms6{
+  display: none;
+}
+
+.bottom-section {
+  background-color: #87bdd8;
+  padding: 5px;
+}
+
+#tab {
+  background-color: #daebe8;
+  text-align: left;
+}
+
+.tab-h2 {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 75px;
+}
+
+.tab {
+  display: inline-block;
+}
+
+.tab button {
+  background-color: transparent;
+  border-top: solid;
+  border-left: solid;
+  border-right: solid;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.tab button:hover {
+  background-color: #87bdd8;
+}
+
+.tab button.active {
+  background-color: #87bdd8;
+}
+
+#safety {
+  background-image: url(images/female_doc.jpg);
+  background-repeat: no-repeat;
+  color: black;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+#hcahps {
+  background-image: url(images/Male_doc.jpeg);
+  background-repeat: no-repeat;
+  color: black;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+#eff {
+  background-image: url(images/Hospital_front.jpeg);
+  background-repeat: no-repeat;
+  color: black;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+.fy {
+  padding-top: 20px;
+}
+
+.spacer {
+  margin-top: 50px;
+}
+
+.tb {
+  border: solid thin;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  padding: 5px;
+  position: relative;
+}
+
+.table-tab {
+  display: inline-block;
+  text-align: left;
+}
+
+table tr td {
+  width: 350px;
+}
+
+.vbp {
+  font-family: "Libre Baskerville";
+  padding-bottom: 35px;
+  padding-top: 25px;
+}
+
+.vh {
+  padding-bottom: 25px;
+}
+
+@media print {
+  body {
+    background-color: #b7d7e8;
+    font-family: "Lato";
+  }
+
+  .top-section {
     background-color: #87bdd8;
     font-family: "Libre Baskerville";
     padding: 15px;
     text-align: center;
   }
 
-  #safety{
-    background-image: url(images/female_doc.jpg);
-    background-repeat: no-repeat;
-    color: black;
-    padding-bottom: 15px;
-    padding-top: 25px;
+  .ts-h {
+    font-size: 3.5em;
   }
 
-  #hcahps{
-    background-image: url(images/Male_doc.jpeg);
-    background-repeat: no-repeat;
-    color: black;
-    padding-bottom: 15px;
-    padding-top: 25px;
-  }
-
-  #eff{
-    background-image: url(images/Hospital_front.jpeg);
-    background-repeat: no-repeat;
-    color: black;
-    padding-bottom: 15px;
-    padding-top: 25px;
-  }
-
-  .vbph{
-    font-family: "Libre Baskerville";
+  .mid-section {
+    background-color: #daebe8;
     text-align: center;
   }
 
-  .fy{
-    font-size: 2.5em;
-    margin-top: 20px;
-    text-align: center;
+  .bottom-section {
+    background-color: #87bdd8;
+    padding: 5px;
   }
 
-  .vbp{
-    background-color: #Cfe0e8;
-    padding-bottom: 30px;
+  #tab {
+    display: none;
+  }
+
+  #safety {
+    background-image: none;
+    display: block;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
+
+  #hcahps {
+    background-image: none;
+    display: block;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
+
+  #eff {
+    background-image: none;
+    display: block;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
+
+  .fy {
     padding-top: 20px;
-    text-align: center;
   }
 
-  .tb{
+  .spacer {
+    margin-top: 50px;
+  }
+
+  .tb {
     border: solid thin;
     display: inline-block;
     margin-left: 10px;
@@ -61,41 +194,22 @@ body{
     position: relative;
   }
 
-  .table-tab{
+  .table-tab {
     display: inline-block;
+    text-align: left;
   }
 
-  table tr td{
-    width: 300px;
+  table tr td {
+    width: 350px;
   }
 
-  .rt{
-    background-color: #87bdd8;
+  .vbp {
     font-family: "Libre Baskerville";
-    font-size: 1.3em;
-    padding: 1px;
-    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 25px;
   }
 
-  .spacer{
-    margin-bottom: 50px;
-    margin-top: 40px;
+  .vh {
+    padding-bottom: 25px;
   }
-
-  .sp{
-    margin-top: 150px;
-  }
-
-  .sp2{
-      margin-top: 150px;
-  }
-
-  .bottom-section{
-    background-color: #87bdd8;
-    padding: 10px;
-  }
-
-  .bottom-section h6{
-    font-size: .7em;
-    font-family: "Lato";
-  }
+}
